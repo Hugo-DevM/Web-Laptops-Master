@@ -1,0 +1,168 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-bottom: 1px solid #7c7c7c49;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.logo {
+  font-weight: bold;
+  color: var(--color-text-primary);
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.logoSpan {
+  color: var(--color-secondary);
+}
+
+.logo:hover {
+  scale: 1.05;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navLink {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.navLink:hover {
+  color: var(--color-primary);
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 13px;
+  text-decoration: none;
+  background-color: var(--color-green);
+  color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.buttonIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonDesktop {
+  display: flex;
+}
+
+.buttonMobile {
+  display: none;
+}
+
+.button:hover {
+  scale: 1.03;
+  background-color: var(--color-green-hover);
+}
+
+.menuButton {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: 1px solid var(--color-text-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.menuIconOpen {
+  display: flex;
+}
+
+.menuIconClose {
+  display: none;
+}
+
+.menuButton[aria-expanded="true"] .menuIconOpen {
+  display: none;
+}
+
+.menuButton[aria-expanded="true"] .menuIconClose {
+  display: flex;
+}
+
+@media (max-width: 950px) {
+  .menuButton {
+    display: flex;
+  }
+
+  .buttonDesktop {
+    display: none;
+  }
+
+  .buttonMobile {
+    display: block;
+    margin: 1rem 2rem;
+    text-align: center;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition:
+      max-height 0.3s ease,
+      opacity 0.3s ease;
+  }
+
+  .nav:global(.open) {
+    max-height: 400px;
+    opacity: 1;
+  }
+
+  .navLink {
+    text-align: center;
+    padding: 1rem 2rem;
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .header {
+    position: relative;
+  }
+
+  .button {
+    width: 85%;
+  }
+}

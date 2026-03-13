@@ -1,0 +1,17 @@
+:root {
+  --font-primary: "Inter", sans-serif;
+
+  --color-primary: #2563ea;
+  --color-secondary: #dc2625;
+  --color-green: #26d367;
+  --color-green-hover: #1ca550;
+
+  --color-text-primary: #0f172a;
+
+  --color-background: #f3f8fc;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: var(--background);
+}
