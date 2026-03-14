@@ -1,14 +1,17 @@
 :root {
-  --font-primary: "Inter", sans-serif;
+  --font-primary: "Montserrat", sans-serif;
 
   --color-primary: #2563ea;
+  --color-primary-hover: #1d4ed8;
   --color-secondary: #dc2625;
+  --color-secondary-hover: #c50000;
   --color-green: #26d367;
   --color-green-hover: #1ca550;
 
   --color-text-primary: #0f172a;
+  --color-text-secondary: #464646e0;
 
-  --color-background: #f3f8fc;
+  --background: #f3f8fc;
 }
 
 body {
