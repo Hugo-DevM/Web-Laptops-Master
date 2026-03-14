@@ -115,3 +115,60 @@
     transform: scale(0.78);
   }
 }
+
+@media (max-width: 1024px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    padding-top: 1rem;
+  }
+
+  .heroContentLeft {
+    align-items: center;
+    text-align: center;
+  }
+
+  .heroContentBadges {
+    justify-content: center;
+  }
+
+  .heroContentButtons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2.8rem;
+    padding-bottom: 1rem;
+  }
+
+  .heroDescription {
+    margin: 0 auto;
+  }
+
+  .heroContentButtons {
+    margin: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .heroCanvas {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    aspect-ratio: 1;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 2.2rem;
+  }
+
+  .heroContentBadges {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+}
