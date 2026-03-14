@@ -1,0 +1,17 @@
+.stacks {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.stacksNumber {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-text-primary);
+}
+
+.stacksText {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+}

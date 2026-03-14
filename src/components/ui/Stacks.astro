@@ -1,0 +1,10 @@
+---
+import styles from "../../styles/components/ui/stacks.module.css";
+
+const { stacks, text } = Astro.props;
+---
+
+<div class={styles.stacks}>
+  <span class={styles.stacksNumber}>{stacks}</span>
+  <span class={styles.stacksText}>{text}</span>
+</div>

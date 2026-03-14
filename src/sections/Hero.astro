@@ -1,0 +1,51 @@
+---
+import Button from "../components/ui/Button.astro";
+import Stacks from "../components/ui/Stacks.astro";
+import styles from "../styles/sections/hero.module.css";
+import { heroStacks } from "../utils/dataStacks";
+---
+
+<section class={styles.hero}>
+  <div class={styles.heroContent}>
+    <div class={styles.heroContentLeft}>
+      <h1 class={styles.heroTitle}>
+        <span class={styles.heroTitleSpanRed}>Reparación</span> de <br />Laptops <br
+        />
+        en <span class={styles.heroTitleSpanBlue}>Puerto Vallarta</span>
+      </h1>
+      <p class={styles.heroDescription}>
+        Reparamos tu laptop en Puerto Vallarta con <span
+          class={styles.heroDescriptionSpan}
+        >
+          precio justo y garantía real</span
+        >. También vamos a <span class={styles.heroDescriptionSpan}
+          >domicilio</span
+        >.
+      </p>
+      <div class={styles.heroContentBadges}>
+        {
+          heroStacks.map((stack) => (
+            <Stacks stacks={stack.stacks} text={stack.text} />
+          ))
+        }
+      </div>
+      <div class={styles.heroContentButtons}>
+        <Button variant="primary">Solicitar reparación</Button>
+        <Button variant="secondary">Escribenos por Whatsapp</Button>
+      </div>
+    </div>
+    <div class={styles.heroContentRight}>
+      <canvas class={styles.heroCanvas} id="dotlottie-canvas"></canvas>
+    </div>
+  </div>
+</section>
+
+<script>
+  import { DotLottie } from "@lottiefiles/dotlottie-web";
+  new DotLottie({
+    autoplay: true,
+    loop: true,
+    canvas: document.querySelector("#dotlottie-canvas") as HTMLCanvasElement,
+    src: "./hero.lottie",
+  });
+</script>
