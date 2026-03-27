@@ -118,3 +118,10 @@
     max-width: 40ch;
   }
 }
+
+@media (max-width: 468px) {
+
+  .serviceDescription {
+    max-width: 30ch;
+  }
+}
