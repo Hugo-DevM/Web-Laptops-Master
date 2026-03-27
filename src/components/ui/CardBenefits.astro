@@ -1,0 +1,13 @@
+---
+import styles from "../../styles/components/ui/cardbenefits.module.css";
+
+const { icon, title, description } = Astro.props;
+---
+
+<div class={styles.cardBenefits}>
+  <div set:html={icon} class={styles.cardBenefitsIcon} />
+  <div class={styles.benefitsContentData}>
+    <p class={styles.cardBenefitsTitle}>{title}</p>
+    <span class={styles.cardBenefitsDescription}>{description}</span>
+  </div>
+</div>

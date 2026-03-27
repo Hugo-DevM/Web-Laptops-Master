@@ -209,3 +209,137 @@ export const services = [
     variant: "primary",
   },
 ];
+
+export const benefits = [
+  {
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="28"
+  height="28"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4" />
+  <path d="M15 19l2 2l4 -4" />
+</svg>
+`,
+    title: "Atención personalizada",
+    description:
+      "Tratamos cada equipo y cada cliente de forma individual. Explicamos lo que hacemos con claridad y sin tecnicismos.",
+  },
+  {
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="28"
+  height="28"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z" />
+  <path d="M12 8v4" />
+  <path d="M12 16h.01" />
+</svg>
+`,
+    title: "Diagnóstico honesto",
+    description:
+      "Si tu equipo no tiene reparación o el costo no vale la pena, te lo decimos antes de cobrar un solo peso.",
+  },
+  {
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="28"
+  height="28"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+  <path d="M12 12h3.5" />
+  <path d="M12 7v5" />
+</svg>
+    `,
+    title: "Servicio rápido",
+    description:
+      "La mayoría de reparaciones las entregamos en 24 a 48 horas. Sin esperas interminables ni excusas.",
+  },
+  {
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="28"
+  height="28"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M16.7 8a3 3 0 0 0 -2.7 -2h-4a3 3 0 0 0 0 6h4a3 3 0 0 1 0 6h-4a3 3 0 0 1 -2.7 -2" />
+  <path d="M12 3v3m0 12v3" />
+</svg>
+`,
+    title: "Precios accesibles",
+    description:
+      "Cobramos lo justo. Damos presupuesto sin compromiso antes de iniciar cualquier reparación.",
+  },
+  {
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="28"
+  height="28"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M11.46 20.846a12 12 0 0 1 -7.96 -14.846a12 12 0 0 0 8.5 -3a12 12 0 0 0 8.5 3a12 12 0 0 1 -.09 7.06" />
+  <path d="M15 19l2 2l4 -4" />
+</svg>
+`,
+    title: "Garantía en el servicio",
+    description:
+      "Nuestras reparaciones tienen garantía. Si algo falla después del servicio, lo resolvemos sin costo adicional.",
+  },
+  {
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="28"
+  height="28"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M3 7m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" />
+  <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+  <path d="M12 12l0 .01" />
+  <path d="M3 13a20 20 0 0 0 18 0" />
+</svg>
+`,
+    title: "Experiencia comprobada",
+    description:
+      "Años de experiencia reparando laptops y computadoras de todas las marcas, modelos y sistemas operativos.",
+  },
+];

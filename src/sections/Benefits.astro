@@ -1,0 +1,44 @@
+---
+import Button from "../components/ui/Button.astro";
+import Stacks from "../components/ui/Stacks.astro";
+import { benefitsStacks } from "../utils/dataStacks";
+import { benefits } from "../utils/dataCards";
+import styles from "../styles/sections/benefits.module.css";
+import CardBenefits from "../components/ui/CardBenefits.astro";
+---
+
+<section class={styles.benefits}>
+  <div class={styles.benefitsContent}>
+    <div class={styles.benefitsContentRigth}>
+      <span class={styles.benefitsSpan}>POR QUÉ ELEGIRNOS</span>
+      <h2 class={styles.benefitsTitle}>
+        No solo reparamos equipos. Resolvemos problemas <br
+          class={styles.break}
+        />de verdad.
+      </h2>
+      <p class={styles.benefitsDescription}>
+        En Laptops Master trabajamos con honestidad y profesionalismo desde el
+        primer diagnostico hasta la entrega de tu equipo.
+      </p>
+      <div class={styles.benefitsContentStacks}>
+        {
+          benefitsStacks.map((stack) => (
+            <Stacks stacks={stack.stacks} text={stack.text} />
+          ))
+        }
+      </div>
+      <Button variant="primary">Cóntactanos ahora</Button>
+    </div>
+    <div class={styles.benefitsContentLeft}>
+      {
+        benefits.map((b) => (
+          <CardBenefits
+            icon={b.icon}
+            title={b.title}
+            description={b.description}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>

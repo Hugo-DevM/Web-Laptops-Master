@@ -12,3 +12,18 @@ export const heroStacks = [
     text: "Diagnóstico rápido",
   },
 ];
+
+export const benefitsStacks = [
+  {
+    stacks: "+10k",
+    text: "Equipos reparados",
+  },
+  {
+    stacks: "98%",
+    text: "Clientes satisfechos",
+  },
+  {
+    stacks: "+18 años",
+    text: "De experiencia técnica",
+  },
+];

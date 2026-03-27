@@ -1,0 +1,121 @@
+.benefits {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background)
+}
+
+.benefitsContent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 4rem 2rem;
+    max-width: 1300px;
+}
+
+.benefitsContentRigth {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.benefitsSpan {
+    color: var(--color-secondary);
+    background: var(--color-secondary-background-card);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+}
+
+.benefitsTitle {
+    font-size: 2rem;
+}
+
+.benefitsDescription {
+    margin: 0;
+    width: 40ch;
+    color: var(--color-text-secondary);
+}
+
+.benefitsContentStacks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 3rem 0;
+}
+
+.benefitsContentLeft {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+@media (max-width: 1023px) {
+    .break {
+        display: none;
+    }
+
+    .benefitsContent {
+        gap: 3rem;
+    }
+
+    .benefitsContentRigth {
+        align-items: center;
+        text-align: center;
+    }
+
+    .benefitsContent {
+        grid-template-columns: 1fr;
+        margin: 3rem 2rem;
+    }
+
+    .benefitsDescription {
+        width: 100%;
+    }
+
+    .benefitsContentStacks {
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+
+    .benefitsContentLeft {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    .benefitsContent {
+        grid-template-columns: 1fr;
+        margin: 2.5rem 1.25rem;
+        gap: 2rem;
+    }
+
+    .benefitsTitle {
+        font-size: 1.6rem;
+    }
+
+    .benefitsDescription {
+        width: 100%;
+    }
+
+    .benefitsContentStacks {
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        padding: 1.5rem 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .benefitsContentLeft {
+        grid-template-columns: 1fr;
+
+    }
+}
