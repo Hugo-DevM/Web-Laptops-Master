@@ -3,8 +3,12 @@
 
   --color-primary: #2563ea;
   --color-primary-hover: #1d4ed8;
+  --color-primary-background-card: #2563ea11;
+
   --color-secondary: #dc2625;
   --color-secondary-hover: #c50000;
+  --color-secondary-background-card: #dc252511;
+
   --color-green: #26d367;
   --color-green-hover: #1ca550;
 
