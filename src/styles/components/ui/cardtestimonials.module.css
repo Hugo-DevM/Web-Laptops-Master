@@ -1,0 +1,95 @@
+.cardTestimonials {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background: #fff;
+    padding: 2rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 16px;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.cardTestimonialsContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cardStarts {
+    animation: floatCard 1.5s ease-in-out infinite;
+}
+
+.cardStarts:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.cardStarts:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.cardStarts:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.cardStarts:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.cardStarts:nth-child(5) {
+    animation-delay: 2s;
+}
+
+
+@keyframes floatCard {
+    0% {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(255, 230, 0, 0.08);
+    }
+
+    50% {
+        transform: translateY(-6px);
+        box-shadow: 0 16px 40px rgba(255, 230, 0, 0.18);
+    }
+
+    100% {
+        transform: translateY(0);
+        box-shadow: 0 4px 12px rgba(255, 230, 0, 0.08);
+    }
+}
+
+.cardStarts:hover {
+    animation-play-state: paused;
+}
+
+.cardTestimonialsName {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.cardTestimonialsText {
+    color: var(--color-text-secondary);
+    font-size: 15px;
+}
+
+.cardTestimonialsNewReview {
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background: var(--color-secondary);
+    font-weight: 600;
+    font-size: 14px;
+    padding: .6rem 1.2rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+}
+
+.cardTestimonialsNewReview:hover {
+    scale: .98;
+    background: var(--color-secondary-hover);
+}

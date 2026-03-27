@@ -1,0 +1,43 @@
+---
+import Button from "../components/ui/Button.astro";
+import CardTestimonials from "../components/ui/CardTestimonials.astro";
+import styles from "../styles/sections/testimonials.module.css";
+import { testimonials } from "../utils/dataCards";
+---
+
+<section class={styles.testimonials}>
+  <div class={styles.testimonialsContent}>
+    <div class={styles.testimonialsContentData}>
+      <span class={styles.testimonialsSpan}>TESTIMONIOS</span>
+      <h2 class={styles.testimonialsTitle}>Lo que dicen nuestros clientes</h2>
+      <p class={styles.testimonialsDescription}>
+        La confianza de nuestros clientes es nuestra mejor recomendacion. Aqui
+        algunos de los que ya confian en Laptops Master.
+      </p>
+    </div>
+    <div class={styles.testimonialsContentReviews}>
+      {
+        testimonials.map((t) => (
+          <CardTestimonials
+            rating={t.rating}
+            name={t.name}
+            testimonials={t.testimonials}
+          />
+        ))
+      }
+    </div>
+    <div class={styles.testimonialsContentFooter}>
+      <div class={styles.testimonialsFooter}>
+        <div class={styles.testimonialsFooterText}>
+          <p class={styles.testimonialsFooterQuestion}>
+            ¿Listo para recuperar tu equipo?
+          </p>
+          <span class={styles.testimonialsFooterSpan}
+            >Únete a cientos de clientes satisfechos que ya confian en nosotros</span
+          >
+        </div>
+        <Button variant="primary">Solicitar servicio ahora</Button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -438,3 +438,41 @@ export const works = [
       "Con tu aprobación, realizamos la reparación y te entregamos tu equipo probado y funcionando, con garantía incluida.",
   },
 ];
+
+export const testimonials = [
+  {
+    name: "Luis Macedo",
+    rating: 5,
+    testimonials:
+      "Excelente lugar para reparación y mantenimiento de equipos de cómputo, tienen una gran diversidad de cargadores y memorias RAM y USB a excelente precio.. Tengo tiempo dándoles la preferencia, porqué hacen trabajos garantizados...",
+  },
+  {
+    name: "Jesus Hernandez",
+    rating: 5,
+    testimonials:
+      "Excelente servicio, muy amables y cumplen con su trabajo, recomendado.",
+  },
+  {
+    name: "Alejandro Navarro",
+    rating: 5,
+    testimonials:
+      "Atención muy buena, son muy profesionales en su trabajo, el lugar es recomendable.",
+  },
+  {
+    name: "Luis Raul Covarrubias",
+    rating: 5,
+    testimonials: "Buena atención, precios y responsables en su trabajo",
+  },
+  {
+    name: "Ana Pérez",
+    rating: 4,
+    testimonials:
+      "Me infectaron la computadora con un virus que bloqueaba todos mis archivos. Pensé que lo había perdido todo. Lograron recuperar mis documentos y dejaron el equipo completamente limpio. No puedo pedir más.",
+  },
+  {
+    name: "Diego Ramírez",
+    rating: 4,
+    testimonials:
+      "Me cambiaron la pantalla de mi laptop gaming y la dejaron como nueva. El servicio fue rápido, el precio honesto y hasta me orientaron sobre cómo cuidar mejor mi equipo.",
+  },
+];

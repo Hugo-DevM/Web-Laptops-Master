@@ -1,0 +1,36 @@
+---
+import styles from "../../styles/components/ui/cardtestimonials.module.css";
+const PLACE_ID = "ChIJH2copoBFIYQRtOe3QKbtfm8";
+const { rating, name, testimonials } = Astro.props;
+---
+
+<div class={styles.cardTestimonials}>
+  <div class={styles.cardTestimonialsContent}>
+    <p class={styles.cardTestimonialsName}>{name}</p>
+    <div class={styles.contentRating}>
+      {
+        Array.from({ length: rating }).map(() => (
+          <svg
+            class={styles.cardStarts}
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="#f59e0b"
+          >
+            <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z" />
+          </svg>
+        ))
+      }
+    </div>
+  </div>
+  <span class={styles.cardTestimonialsText}>"{testimonials}"</span>
+  <a
+    href={`https://search.google.com/local/writereview?placeid=${PLACE_ID}`}
+    target="_blank"
+    rel="noopener noreferrer"
+    class={styles.cardTestimonialsNewReview}
+  >
+    Dejar reseña
+  </a>
+</div>

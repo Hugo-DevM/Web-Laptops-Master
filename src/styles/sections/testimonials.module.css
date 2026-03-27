@@ -1,0 +1,136 @@
+.testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--background);
+}
+
+.testimonialsContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1300px;
+    margin: 4rem 2rem;
+}
+
+.testimonialsContentData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.testimonialsSpan {
+    color: var(--color-secondary);
+    background: var(--color-secondary-background-card);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 0.5rem 1.5rem;
+    border-radius: 9999px;
+}
+
+.testimonialsTitle {
+    font-size: 2rem;
+}
+
+.testimonialsDescription {
+    width: 50ch;
+    color: var(--color-text-secondary);
+}
+
+.testimonialsContentReviews {
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.8rem;
+}
+
+.testimonialsContentFooter {
+    background: #182134;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.testimonialsFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.8rem;
+}
+
+.testimonialsFooterText {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonialsFooterQuestion {
+    margin: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.testimonialsFooterSpan {
+    color: #ffffff9d;
+}
+
+@media (max-width: 1024px) {
+    .testimonialsContent {
+        margin: 3rem 1.5rem;
+    }
+
+    .testimonialsTitle {
+        font-size: 1.75rem;
+    }
+
+    .testimonialsDescription {
+        width: 60ch;
+    }
+
+    .testimonialsContentReviews {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.4rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .testimonialsContent {
+        margin: 2rem 1rem;
+    }
+
+    .testimonialsTitle {
+        font-size: 1.4rem;
+    }
+
+    .testimonialsDescription {
+        width: 100%;
+        font-size: 0.95rem;
+    }
+
+    .testimonialsContentReviews {
+        grid-template-columns: 1fr;
+        margin: 2rem 0;
+        gap: 1.2rem;
+    }
+
+    .testimonialsFooter {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+        padding: 1.4rem;
+    }
+
+    .testimonialsFooterQuestion {
+        font-size: 16px;
+    }
+
+    .testimonialsFooterSpan {
+        font-size: 0.875rem;
+    }
+}
