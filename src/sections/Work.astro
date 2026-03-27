@@ -1,0 +1,39 @@
+---
+import CardWork from "../components/ui/CardWork.astro";
+import styles from "../styles/sections/work.module.css";
+import { works } from "../utils/dataCards";
+---
+
+<section class={styles.work}>
+  <div class={styles.workContent}>
+    <div class={styles.workContentData}>
+      <span class={styles.workSpan}>ASI TRABAJAMOS</span>
+      <h2 class={styles.workTitle}>
+        Un proceso simple, <br />un resultado confiable
+      </h2>
+      <p class={styles.workDescription}>
+        Sabemos que tu equipo es importante. Por eso trabajamos con un proceso
+        claro, transparente y orientado a darte la mejor solución.
+      </p>
+    </div>
+    <div class={styles.workContentCards}>
+      {
+        works.map((w) => (
+          <CardWork
+            number={w.number}
+            icon={w.icon}
+            title={w.title}
+            description={w.description}
+          />
+        ))
+      }
+    </div>
+    <div class={styles.workContentFooter}>
+      <p class={styles.workContentFooterText}>
+        Tendras tu diagnóstico en menos de <span class={styles.spanFooter}
+          >24hrs</span
+        >. La rapidez es nuestra especialidad
+      </p>
+    </div>
+  </div>
+</section>

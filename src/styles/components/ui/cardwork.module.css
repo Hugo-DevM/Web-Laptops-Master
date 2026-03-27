@@ -1,0 +1,50 @@
+.cardWork {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.8rem;
+    text-align: center;
+    border: 1px solid #dfdfdf;
+    border-radius: 16px;
+    padding: 1.8rem;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.cardWork:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.cardWorkNumber {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-secondary);
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: 9999px;
+}
+
+.cardWorkIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 0.5rem;
+    background: var(--color-primary-background-card);
+}
+
+.cardWorkTitle {
+    color: var(--color-text-primary);
+    font-weight: 600;
+    margin: 0;
+}
+
+.cardWorkDescription {
+    color: var(--color-text-secondary);
+    font-size: 14px;
+}

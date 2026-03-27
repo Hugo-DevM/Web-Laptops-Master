@@ -343,3 +343,98 @@ export const benefits = [
       "Años de experiencia reparando laptops y computadoras de todas las marcas, modelos y sistemas operativos.",
   },
 ];
+
+export const works = [
+  {
+    number: "01",
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M20 4l-2 2" />
+  <path d="M22 10.5l-2.5 -.5" />
+  <path d="M13.5 2l.5 2.5" />
+  <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2c-8.072 -.49 -14.51 -6.928 -15 -15a2 2 0 0 1 2 -2" />
+</svg>
+    `,
+    title: "Nos contactas",
+    description:
+      "Escríbenos por WhatsApp, llámanos o llena el formulario de contacto. Cuéntanos qué le pasa a tu equipo y coordinamos la revisión.",
+  },
+  {
+    number: "02",
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+  <path d="M21 21l-6 -6" />
+</svg>
+`,
+    title: "Revisamos tu equipo",
+    description:
+      "Nuestro técnico hace una revisión completa de tu dispositivo para identificar con precisión la causa del problema.",
+  },
+  {
+    number: "03",
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+  <path d="M9 17h6" />
+  <path d="M9 13h6" />
+</svg>
+`,
+    title: "Recibe el diagnóstico",
+    description:
+      "Te informamos qué falla tiene tu equipo, qué necesita y cuánto costará la reparación. Sin sorpresas ocultas.",
+  },
+  {
+    number: "04",
+    icon: `
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="#2563ea"
+  stroke-width="1.5"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+>
+  <path d="M9 11l3 3l8 -8" />
+  <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" />
+</svg>
+`,
+    title: "Reparamos y entregamos",
+    description:
+      "Con tu aprobación, realizamos la reparación y te entregamos tu equipo probado y funcionando, con garantía incluida.",
+  },
+];

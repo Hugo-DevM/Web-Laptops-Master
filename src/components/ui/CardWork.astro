@@ -1,0 +1,12 @@
+---
+import styles from "../../styles/components/ui/cardwork.module.css";
+
+const { icon, number, title, description } = Astro.props;
+---
+
+<div class={styles.cardWork}>
+  <span class={styles.cardWorkNumber}>{number}</span>
+  <div class={styles.cardWorkIcon} set:html={icon} />
+  <p class={styles.cardWorkTitle}>{title}</p>
+  <span class={styles.cardWorkDescription}>{description}</span>
+</div>
