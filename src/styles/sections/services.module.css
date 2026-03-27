@@ -1,0 +1,120 @@
+.service {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.serviceContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1300px;
+  margin: 4rem 2rem;
+}
+
+.serviceContentText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.serviceSpan {
+  color: var(--color-primary);
+  background: var(--color-primary-background-card);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+}
+
+.serviceTitle,
+.serviceDescription {
+  text-align: center;
+}
+
+.serviceTitle {
+  font-size: 2rem;
+}
+
+.serviceDescription {
+  width: 50ch;
+  color: var(--color-text-secondary);
+}
+
+.serviceContentCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.serviceContentFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.serviceFooter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2.5rem;
+  background: var(--background);
+  padding: 2rem 0;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.serviceFooterQuestion {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .serviceContentCards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .serviceContentCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .serviceContentCards {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 2rem;
+  }
+
+  .serviceFooter {
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem 0;
+    margin: 0 2rem;
+  }
+
+  .serviceFooterQuestion {
+    font-size: 14px;
+  }
+
+  .serviceContentText {
+    margin: 0 2rem;
+  }
+
+  .serviceTitle {
+    font-size: 1.6rem;
+  }
+
+  .serviceDescription {
+    font-size: 15px;
+    max-width: 40ch;
+  }
+}

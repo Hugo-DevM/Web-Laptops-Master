@@ -1,0 +1,41 @@
+.cardService {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--background);
+  border: 1px solid #d8edff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.cardService:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.18);
+}
+
+.cardServiceIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  padding: 0.5rem;
+  background: var(--color-primary-background-card);
+}
+
+.secondary {
+  background: var(--color-secondary-background-card);
+}
+
+.cardServiceTitle {
+  color: var(--color-text-primary);
+  font-weight: 600;
+}
+
+.cardServiceDescription {
+  color: var(--color-text-secondary);
+  font-size: 14px;
+}

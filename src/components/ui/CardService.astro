@@ -1,0 +1,18 @@
+---
+import styles from "../../styles/components/ui/cardservice.module.css";
+
+const { icon, title, description, variant } = Astro.props;
+const variants = {
+  primary: styles.primary,
+  secondary: styles.secondary,
+};
+---
+
+<div class={styles.cardService}>
+  <div
+    class={`${styles.cardServiceIcon} ${variants[variant as keyof typeof variants]}`}
+    set:html={icon}
+  />
+  <p class={styles.cardServiceTitle}>{title}</p>
+  <span class={styles.cardServiceDescription}>{description}</span>
+</div>

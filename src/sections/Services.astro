@@ -1,0 +1,41 @@
+---
+import Button from "../components/ui/Button.astro";
+import CardService from "../components/ui/CardService.astro";
+import styles from "../styles/sections/services.module.css";
+import { services } from "../utils/dataCards";
+---
+
+<section class={styles.service}>
+  <div class={styles.serviceContent}>
+    <div class={styles.serviceContentText}>
+      <span class={styles.serviceSpan}>NUESTROS SERVICIOS</span>
+      <h2 class={styles.serviceTitle}>
+        Todo lo que tu equipo necesita, <br /> en un solo lugar
+      </h2>
+      <p class={styles.serviceDescription}>
+        Desde una pantalla rota hasta uun sistema infectado. Contamos con la
+        experiencia y las herramientas para resolver cualquier problema técnico.
+      </p>
+    </div>
+    <div class={styles.serviceContentCards}>
+      {
+        services.map((s) => (
+          <CardService
+            icon={s.icon}
+            title={s.title}
+            description={s.description}
+            variant={s.variant}
+          />
+        ))
+      }
+    </div>
+    <div class={styles.serviceContentFooter}>
+      <div class={styles.serviceFooter}>
+        <p class={styles.serviceFooterQuestion}>
+          ¿No encuentras lo que buscas?
+        </p>
+        <Button variant="fourthary">Contactanos</Button>
+      </div>
+    </div>
+  </div>
+</section>
