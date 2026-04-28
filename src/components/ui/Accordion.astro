@@ -1,0 +1,40 @@
+---
+import styles from "../../styles/components/ui/accordion.module.css";
+
+const { question, answer } = Astro.props;
+---
+
+<div class={styles.faqItem} data-faq-item>
+  <div class={styles.faqHeader} data-faq-header>
+    <p class={styles.faqQuestion}>{question}</p>
+    <button class={styles.faqButton} data-faq-button>+</button>
+  </div>
+
+  <div class={styles.faqContent}>
+    <p class={styles.faqAnswer}>{answer}</p>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("click", (e) => {
+    const header = (e.target as Element).closest("[data-faq-header]");
+    if (!header) return;
+
+    const faqItem = header.closest("[data-faq-item]");
+    if (!faqItem) return;
+
+    const isActive = faqItem.classList.contains("active");
+
+    document.querySelectorAll("[data-faq-item]").forEach((item) => {
+      item.classList.remove("active");
+      const btn = item.querySelector("[data-faq-button]");
+      if (btn) btn.textContent = "+";
+    });
+
+    if (!isActive) {
+      faqItem.classList.add("active");
+      const btn = faqItem.querySelector("[data-faq-button]");
+      if (btn) btn.textContent = "−";
+    }
+  });
+</script>

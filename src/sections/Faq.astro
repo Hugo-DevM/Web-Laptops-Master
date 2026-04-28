@@ -1,0 +1,24 @@
+---
+import Accordion from "../components/ui/Accordion.astro";
+import Button from "../components/ui/Button.astro";
+import styles from "../styles/sections/faq.module.css";
+import { faqs } from "../utils/dataAccordion";
+---
+
+<section class={styles.faq} id="faq">
+  <div class={styles.faqContent}>
+    <div class={styles.faqContentRight}>
+      <span class={styles.faqSpan}>PREGUNTAS FRECUENTES</span>
+      <h2 class={styles.faqTitle}>Resolvemos tus dudas antes de que llegues</h2>
+      <p class={styles.faqDescription}>
+        Si no encuentras la respuesta que buscas, no dudes en contactarnos
+        directamente
+      </p>
+      <span class={styles.faqQuestionSpan}>¿Tienes otra pregunta?</span>
+      <Button variant="thirdary" href="#contacto">Escribenos</Button>
+    </div>
+    <div class={styles.faqContentLeft}>
+      {faqs.map((f) => <Accordion answer={f.answer} question={f.question} />)}
+    </div>
+  </div>
+</section>

@@ -1,27 +1,108 @@
 ---
+import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import "../styles/global.css";
+
+const SITE_URL = "https://laptopsmaster.com";
+const title = "Laptops Master | Reparación de Laptops en Puerto Vallarta";
+const description =
+  "Reparación profesional de laptops, MacBooks y equipos de cómputo en Puerto Vallarta. Diagnóstico gratuito, garantía en todos los servicios y atención de lunes a sábado.";
+const image = `${SITE_URL}/og-image.jpg`;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
+
+    <!-- Primary SEO -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta
+      name="keywords"
+      content="reparación laptops Puerto Vallarta, reparación MacBook Puerto Vallarta, técnico computadoras Puerto Vallarta, mantenimiento laptop, cambio pantalla laptop, reparación PC Jalisco, servicio técnico computadoras, Laptops Master"
+    />
+    <meta name="author" content="Laptops Master" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={SITE_URL} />
+
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={SITE_URL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="es_MX" />
+    <meta property="og:site_name" content="Laptops Master" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+
+    <!-- Theme color (barra del navegador en móvil) -->
+    <meta name="theme-color" content="#2563ea" />
+
+    <!-- Structured Data: Local Business -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Laptops Master",
+        "description": "Reparación profesional de laptops, MacBooks y equipos de cómputo en Puerto Vallarta. Diagnóstico gratuito y garantía en todos los servicios.",
+        "url": "https://laptopsmaster.com",
+        "telephone": "+523221481334",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Colonia Pitillal",
+          "addressLocality": "Puerto Vallarta",
+          "addressRegion": "Jalisco",
+          "addressCountry": "MX"
+        },
+        "openingHours": ["Mo-Fr 09:00-20:00", "Sa 09:00-17:00"],
+        "sameAs": [
+          "https://www.facebook.com/share/18sHGGv6BZ/",
+          "https://www.instagram.com/laptopsmaster1",
+          "https://www.tiktok.com/@laptopsmasterofic"
+        ],
+        "priceRange": "$$",
+        "image": "https://laptopsmaster.com/og-image.jpg",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Servicios de reparación",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de pantalla" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cambio de batería" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Limpieza interna" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reinstalación de software" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Reparación de MacBook" } }
+          ]
+        }
+      }
+    </script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
     <meta name="generator" content={Astro.generator} />
-    <title>Laptops Master - Reparación de equipos de computo</title>
   </head>
   <body>
     <Header />
     <slot />
+    <Footer />
   </body>
 </html>
 

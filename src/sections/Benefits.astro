@@ -7,7 +7,7 @@ import styles from "../styles/sections/benefits.module.css";
 import CardBenefits from "../components/ui/CardBenefits.astro";
 ---
 
-<section class={styles.benefits}>
+<section class={styles.benefits} id="nosotros">
   <div class={styles.benefitsContent}>
     <div class={styles.benefitsContentRigth}>
       <span class={styles.benefitsSpan}>POR QUÉ ELEGIRNOS</span>
@@ -27,7 +27,7 @@ import CardBenefits from "../components/ui/CardBenefits.astro";
           ))
         }
       </div>
-      <Button variant="primary">Cóntactanos ahora</Button>
+      <Button variant="primary" href="#contacto">Cóntactanos ahora</Button>
     </div>
     <div class={styles.benefitsContentLeft}>
       {

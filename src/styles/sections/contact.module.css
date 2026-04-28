@@ -1,0 +1,300 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background);
+}
+
+.contactContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin: 4rem 2rem;
+}
+
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.contactSpan {
+  color: var(--color-primary);
+  background: var(--color-primary-background-card);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  letter-spacing: 0.05em;
+}
+
+.contactTitle {
+  font-size: 2.2rem;
+  color: var(--color-text-primary);
+  margin: 1rem 0 0.5rem;
+}
+
+.contactDescription {
+  color: var(--color-text-secondary);
+  max-width: 48ch;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 2.5rem;
+  width: 100%;
+}
+
+/* Left: Contact info */
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.whatsappBtn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-green);
+  color: #fff;
+  padding: 1rem 1.4rem;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background 0.25s ease, transform 0.2s ease;
+  font-weight: 500;
+}
+
+.whatsappBtn:hover {
+  background: var(--color-green-hover);
+  transform: translateY(-2px);
+}
+
+.whatsappIcon {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.whatsappLabel {
+  margin: 0;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.whatsappText {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.infoCards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.infoCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  border: 1px solid #e8edf3;
+  border-radius: 12px;
+  padding: 1rem 1.2rem;
+}
+
+.infoIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--color-primary-background-card);
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.infoLabel {
+  margin: 0;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.06em;
+}
+
+.infoValue {
+  margin: 0.2rem 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.responseNote {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-secondary);
+}
+
+.responseNoteLink {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* Right: Form */
+.formCard {
+  background: #fff;
+  border: 1px solid #e8edf3;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 2px 16px 0 #0f172a0a;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.formLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.required {
+  color: var(--color-secondary);
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  padding: 0.7rem 1rem;
+  border: 1.5px solid #dde3ec;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: var(--color-text-primary);
+  background: #f8fafc;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formInput:focus,
+.formSelect:focus,
+.formTextarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px #2563ea18;
+  background: #fff;
+}
+
+.formTextarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.selectWrapper select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-right: 2.5rem;
+}
+
+.selectArrow {
+  position: absolute;
+  right: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: var(--color-text-secondary);
+  display: flex;
+}
+
+.submitBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--color-secondary);
+  color: #fff;
+  border: none;
+  padding: 0.9rem 1.5rem;
+  border-radius: 8px;
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.2s ease;
+  margin-top: 0.3rem;
+}
+
+.submitBtn:hover {
+  background: var(--color-secondary-hover);
+  transform: translateY(-2px);
+}
+
+.privacyNote {
+  margin: 0;
+  font-size: 12px;
+  color: var(--color-text-secondary);
+  text-align: center;
+  line-height: 1.5;
+  padding-top: 0.5rem;
+  border-top: 1.5px solid var(--color-secondary);
+}
+
+@media (max-width: 1024px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactContent {
+    margin: 3rem 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .contactContent {
+    margin: 2rem 1rem;
+  }
+
+  .contactTitle {
+    font-size: 1.7rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .formCard {
+    padding: 1.4rem;
+  }
+}
