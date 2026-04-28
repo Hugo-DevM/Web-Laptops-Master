@@ -140,10 +140,12 @@
 .responseNote {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.4rem;
   margin: 0;
   font-size: 13px;
   color: var(--color-text-secondary);
+  line-height: 1.5;
 }
 
 .responseNoteLink {
