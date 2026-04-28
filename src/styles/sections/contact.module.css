@@ -279,6 +279,29 @@
   .contactContent {
     margin: 3rem 1.5rem;
   }
+
+  .contactTitle {
+    font-size: 1.9rem;
+  }
+
+  .infoCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .infoCards {
+    grid-template-columns: 1fr;
+  }
+
+  .contactTitle {
+    font-size: 1.7rem;
+  }
+
+  .contactHeader {
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 640px) {
@@ -287,7 +310,11 @@
   }
 
   .contactTitle {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
+  }
+
+  .contactDescription {
+    font-size: 0.95rem;
   }
 
   .formRow {
@@ -295,6 +322,10 @@
   }
 
   .formCard {
-    padding: 1.4rem;
+    padding: 1.2rem;
+  }
+
+  .whatsappBtn {
+    padding: 0.9rem 1rem;
   }
 }

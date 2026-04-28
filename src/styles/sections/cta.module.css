@@ -84,6 +84,11 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 3rem 1.5rem;
+    gap: 1.5rem;
+  }
+
+  .ctaTitle {
+    font-size: 1.75rem;
   }
 }
 
@@ -93,7 +98,11 @@
   }
 
   .ctaTitle {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
+  }
+
+  .ctaDescription {
+    font-size: 0.95rem;
   }
 
   .ctaActions {
